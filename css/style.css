@@ -1,0 +1,135 @@
+body {
+	background-color: rgb(172, 172, 172) 
+}
+
+header{
+    background-color: white;
+    padding: 20px;
+    margin: 0px;
+    height: 30px;
+}
+header img{
+    padding-inline-start: 225px;
+    width: 100px;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+    padding-inline-end: 200px;
+}
+header nav a{
+    color:rgb(163, 163, 163);
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 15px;
+    font: helvetica;
+}
+header nav a.active{
+    color: black;
+}
+
+div#general {
+	margin: auto; 
+	margin-top: 20px;
+	width: 960px;
+	height: 800px;
+	
+}
+		div#general p {
+			text-align: center;
+			font-size: 3;
+		}
+
+		div#general h2 {
+			font-size: 3
+		}
+
+		div#general h3 {
+			font-size: 3
+		}
+		div#general h4 {
+			font-size: 3
+}
+
+div#mainBox {
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-left: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+    float: left;
+	width: 150px;
+	height: 580px;
+	background-color: white;
+	font-size: 1rem;
+}
+		div#mainBox img {
+			float: left;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			width: 150px;
+			height: 150px;
+		}
+		div#mainBox h2{
+			font-size: 1rem;
+			text-align: left;
+		}
+		div#mainBox p{
+			font-size: 1rem;
+			text-align: left;
+		}
+
+		div#social {
+			margin: 10px;
+
+		}
+
+		div#social a{
+			text-decoration: none;
+			font-size: 30px;
+			text-align: center;
+		}
+
+div#box {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 600px;
+	height: 200px;
+	background-color: white;
+}
+
+		div img{
+			float: left;
+			width: 150px;
+			height: 150px;
+		}
+
+		div#box h1{
+			float: left;
+			font-size: 1rem;
+			font: helvetica;
+			text-align: left;
+			margin-bottom: 2px;
+		}
+		div#box h2{
+			float: left;
+			font-size: 1rem;
+			font: helvetica;
+			text-align: left;
+			margin-bottom: 2px;
+		}
+		
+		div#box p{
+			font-size: 1rem;
+			text-align: left;
+		}
+
+.divider{
+	width: 80px;
+	border-top: 2px solid grey;
+}
