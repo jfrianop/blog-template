@@ -1,25 +1,33 @@
 * { box-sizing: border-box; }
 
 html {
-  font-family: 'Helvetica Nueue', sans-serif;
-  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
 }
 
 body { background-color: #f2f2f2; }
 
-.container { margin: 0 auto; }
+.container { 
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .navbar {
   background-color: white;
-  padding: 30px 20px;
+  border-bottom: 2px solid rgb(218, 218, 218);
   margin-bottom: 20px;
 }
 
-.navbar img { width: 100px; }
+.navbar h1{ 
+  font-size: 2em;
+  font-weight: 400;
+}
 
 .navbar nav {
-  float: right;
-  margin-top: 7px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navbar nav a {
@@ -31,6 +39,11 @@ body { background-color: #f2f2f2; }
 
 .navbar nav a.active { color: black; }
 
+.box-border{ 
+  border: 2px solid rgb(218, 218, 218) ;
+  border-radius: 4px;
+}
+
 .blog-info {
   background-color: white;
   padding: 20px 25px;
@@ -39,10 +52,16 @@ body { background-color: #f2f2f2; }
 .blog-info .img-wrapper { text-align: center; }
 .blog-info img { width: 150px; }
 
-.blog-info .social { margin: 10px; }
-
-.blog-info .social a {
+.blog-info #social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+  margin: 10px; 
+  color: gray;
   text-decoration: none;
+}
+
+.blog-info #social a {
   font-size: 30px;
   text-align: center;
 }
@@ -53,17 +72,28 @@ body { background-color: #f2f2f2; }
 }
 
 .posts .post {
+  display: flex;
+  width: auto;
   background-color: white;
   padding: 15px;
   margin-bottom: 20px;
 }
 
-.posts .post img { width: 100%; }
+.posts .post img {
+  flex-basis: 250px;
+  border-radius: 3px;
+}
+.post-text{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  margin: 15px;
+}
 
 .posts .post h2 { margin-top: 0; }
 
 @media (min-width: 768px) {
-  html { font-size: 18px; }
+  html { font-size: 16px; }
 
   .container { width: 768px; }
 
@@ -79,19 +109,18 @@ body { background-color: #f2f2f2; }
   .posts { padding-left: 300px; }
 
   .posts .post img {
-    float: left;
     width: 250px;
   }
 }
 
 
 @media (min-width: 992px) {
-  html { font-size: 20px; }
+  html { font-size: 18px; }
   .container { width: 992px; }
 }
 
 @media (min-width: 1200px) {
-  html { font-size: 22px; }
+  html { font-size: 1.6rem}
   .container { width: 1200px; }
 }
 
